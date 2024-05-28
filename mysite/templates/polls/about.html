@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} {{ title}} {% endblock %}
+{% block body %} 
+		<center>
+		<div class="sobre" id="sobre" align="left">
+			<h1 style="font-weight: bold; font-style: italic">Sobre o Projeto</h1>
+			<p style="font-size: 20px">Este blog foi projetado para avaliação de obtenção de nota na disciplina de Desenvolvimento de Softwares para Rede de computadores e Web. O "Código Simples" estará hospedado no respositório de um dos densenvolvedores e sempre ficará disponivel <a href="https://github.com/r0t1v/AvaliationTwoDSweb" target="blank" style="text-decoration-line: none; color: #3c40c6">aqui</a>. A source desse projeto foi rebuildada em django, a partir de um modelo comum já existente desde a primeira avaliação.</p>
+			<hr>
+		</div>
+		<div class="apresentation">
+			<h1 style="font-weight: bold">Desenvolvedores</h1>
+			<div class="container">
+  				<div class="row">
+    				<div class="col-sm">
+						<div class="card" style="width: 85%">
+							<center>
+								<img src="{% static 'img/perfil.png' %}" id="perfil" class="card-img-top" alt="perfil dev1">
+							</center>
+							<div class="card-body">
+							  	<h5 class="card-title">Vitor 'r0t1v/dikdama' Gabriel</h5>
+							    <p class="card-text">Desenvolvedor/Contribuidor & Host do projeto. Acadêmico de Engenharia de Computação da UFPA. Turma 2017.4</p>
+							    <a href="https://github.com/r0t1v/r0t1v" target="blank" class="btn btn-primary">URL</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm">
+						<div class="card" style="width: 85%">
+							<center>
+						  		<img src="{% static 'img/perfil.png' %}" id="perfil" class="card-img-top" alt="perfil dev1">
+						  	</center>
+						  <div class="card-body">
+						    <h5 class="card-title">Wanderson 'wanderson-gomes' Gomes</h5>
+						    <p class="card-text">Desenvolvedor/Contribuidor do projeto. Acadêmico de Engenharia de Computação da UFPA. Turma 2017.4</p>
+						    <a href="https://github.com/wanderson-gomes" target="blank" class="btn btn-primary">URL</a>
+						  </div>
+						</div>
+				  </div>
+  				</div>
+			</div>
+			<h2 style="font-weight: bold" align="left">Entre em contato</h2>
+			<div class="alert alert-secondary" role="alert">Qualquer dúvida sobre o projeto pode mandar para a inbox <a href="mailto:development@codesimple.com.br" class="alert-link">devs@codesimple.com.br</a>.
+			</div>
+		</center>
+{% endblock %}		
